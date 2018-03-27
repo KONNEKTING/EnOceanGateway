@@ -3,7 +3,7 @@
 
 #include <Wire.h>
 
-int readEeprom(int index) { //Example for 24AA02E64 eeprom chip
+int readEeprom(int index) { 
 	// when using external storage, implement READ command here
 	// return EEPROM.read(index);
 	byte rdata = 0xFF;
@@ -17,7 +17,7 @@ int readEeprom(int index) { //Example for 24AA02E64 eeprom chip
 	return rdata;
 }
 
-void writeEeprom(int index, int val) { //Example for 24AA02E64 eeprom chip
+void writeEeprom(int index, int val) { 
 	// when using external storage, implement WRITE command here
 	// return EEPROM.write(index, val);
 	Wire.beginTransmission(0x50);

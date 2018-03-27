@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KonnektingDevice xmlns="http://konnekting.de/xml/KonnektingDevice/v0">
+    <Device ManufacturerId="57005" DeviceId="7" Revision="1">
+        <ManufacturerName>KONNEKTING</ManufacturerName>
+        <DeviceName>KNX EnOcean Gateway</DeviceName>
+        <Parameters>
+            <ParameterGroup Name="Taster Eingang (Enocean sendet -> KNX gibt weiter)" Id="0">
+                <Parameter Id="0">
+                    <Description>Taster_1 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="1">
+                    <Description>Taster_2 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="2">
+                    <Description>Taster_3 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="3">
+                    <Description>Taster_4 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="4">
+                    <Description>Taster_5 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="5">
+                    <Description>Taster_6 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="6">
+                    <Description>Taster_7 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="7">
+                    <Description>Taster_8 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="8">
+                    <Description>Taster_9 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="9">
+                    <Description>Taster_10 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Taster Ausgang (KNX schickt -> Enocean sendet weiter)" Id="1">
+                <Parameter Id="10">
+                    <Description>Taster_11 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="11">
+                    <Description>Taster_12 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="12">
+                    <Description>Taster_13 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="13">
+                    <Description>Taster_14 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="14">
+                    <Description>Taster_15 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="15">
+                    <Description>Taster_16 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="16">
+                    <Description>Taster_17 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="17">
+                    <Description>Taster_18 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="18">
+                    <Description>Taster_19 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+                <Parameter Id="19">
+                    <Description>Taster_20 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+            </ParameterGroup>
+            <ParameterGroup Name="Aktor NodOn" Id="2">
+                <Parameter Id="20">
+                    <Description>Aktor_1 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="21">
+                    <Description>Aktor_1 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="22">
+                    <Description>Aktor_2 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="23">
+                    <Description>Aktor_2 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="24">
+                    <Description>Aktor_3 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="25">
+                    <Description>Aktor_3 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="26">
+                    <Description>Aktor_4 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="27">
+                    <Description>Aktor_4 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="28">
+                    <Description>Aktor_5 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="29">
+                    <Description>Aktor_5 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+				</Parameter>	
+				<Parameter Id="30">
+					<Description>Aktor_6 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="31">
+                    <Description>Aktor_6 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+                </Parameter>
+				<Parameter Id="32">
+					<Description>Aktor_7 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="33">
+                    <Description>Aktor_7 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+                </Parameter>
+				<Parameter Id="34">
+					<Description>Aktor_8 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="35">
+                    <Description>Aktor_8 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+                </Parameter>
+				<Parameter Id="36">
+					<Description>Aktor_9 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="37">
+                    <Description>Aktor_9 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+                </Parameter>
+				<Parameter Id="38">
+					<Description>Aktor_10 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="39">
+                    <Description>Aktor_10 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
+                </Parameter>
+            </ParameterGroup>
+        </Parameters>
+        <CommObjects>
+            <CommObject Id="0">
+                <Name>Taster_1</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="1">
+                <Name>Taster_1</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="2">
+                <Name>Taster_1</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="3">
+                <Name>Taster_1</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="4">
+                <Name>Taster_1</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="5">
+                <Name>Taster_1</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="6">
+                <Name>Taster_2</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="7">
+                <Name>Taster_2</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="8">
+                <Name>Taster_2</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="9">
+                <Name>Taster_2</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="10">
+                <Name>Taster_2</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="11">
+                <Name>Taster_2</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="12">
+                <Name>Taster_3</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="13">
+                <Name>Taster_3</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="14">
+                <Name>Taster_3</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="15">
+                <Name>Taster_3</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="16">
+                <Name>Taster_3</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="17">
+                <Name>Taster_3</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>		
+			<CommObject Id="18">
+                <Name>Taster_4</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="19">
+                <Name>Taster_4</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="20">
+                <Name>Taster_4</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+			</CommObject>
+			<CommObject Id="21">
+                <Name>Taster_4</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="22">
+                <Name>Taster_4</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="23">
+                <Name>Taster_4</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>		
+            </CommObject>
+			<CommObject Id="24">
+                <Name>Taster_5</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="25">
+                <Name>Taster_5</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="26">
+                <Name>Taster_5</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="27">
+                <Name>Taster_5</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="28">
+                <Name>Taster_5</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="29">
+                <Name>Taster_5</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>			
+			<CommObject Id="30">
+                <Name>Taster_6</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="31">
+                <Name>Taster_6</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="32">
+                <Name>Taster_6</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="33">
+                <Name>Taster_6</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="34">
+                <Name>Taster_6</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="35">
+                <Name>Taster_6</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>		
+			<CommObject Id="36">
+                <Name>Taster_7</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="37">
+                <Name>Taster_7</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="38">
+                <Name>Taster_7</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="39">
+                <Name>Taster_7</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="40">
+                <Name>Taster_7</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="41">
+                <Name>Taster_7</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="42">
+                <Name>Taster_8</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="43">
+                <Name>Taster_8</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="44">
+                <Name>Taster_8</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="45">
+                <Name>Taster_8</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="46">
+                <Name>Taster_8</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="47">
+                <Name>Taster_8</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>			
+			<CommObject Id="48">
+                <Name>Taster_9</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="49">
+                <Name>Taster_9</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="50">
+                <Name>Taster_9</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="51">
+                <Name>Taster_9</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="52">
+                <Name>Taster_9</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="53">
+                <Name>Taster_9</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="54">
+                <Name>Taster_10</Name>
+                <Function>CH_A</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="55">
+                <Name>Taster_10</Name>
+                <Function>CH_B</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="56">
+                <Name>Taster_10</Name>
+                <Function>CH_AB</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="57">
+                <Name>Taster_10</Name>
+                <Function>CH_A_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="58">
+                <Name>Taster_10</Name>
+                <Function>CH_B_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="59">
+                <Name>Taster_10</Name>
+                <Function>CH_AB_release</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="60">
+                <Name>Taster_11</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="61">
+                <Name>Taster_12</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="62">
+                <Name>Taster_13</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="63">
+                <Name>Taster_14</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="64">
+                <Name>Taster_15</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="65">
+                <Name>Taster_16</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="66">
+                <Name>Taster_17</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="67">
+                <Name>Taster_18</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="68">
+                <Name>Taster_19</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="69">
+                <Name>Taster_20</Name>
+                <Function>KNX INPUT -> ENOCEAN OUTPUT</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>42</Flags>
+            </CommObject>
+			<CommObject Id="70">
+                <Name>Aktor_1</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="71">
+                <Name>Aktor_1</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="72">
+                <Name>Aktor_2</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="73">
+                <Name>Aktor_2</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="74">
+                <Name>Aktor_3</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="75">
+                <Name>Aktor_3</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="76">
+                <Name>Aktor_4</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="77">
+                <Name>Aktor_4</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="78">
+                <Name>Aktor_5</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="79">
+                <Name>Aktor_5</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="80">
+                <Name>Aktor_6</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="81">
+                <Name>Aktor_6</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="82">
+                <Name>Aktor_7</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="83">
+                <Name>Aktor_7</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="84">
+                <Name>Aktor_8</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="85">
+                <Name>Aktor_8</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="86">
+                <Name>Aktor_9</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="87">
+                <Name>Aktor_9</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="88">
+                <Name>Aktor_10</Name>
+                <Function>Status CH1</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="89">
+                <Name>Aktor_10</Name>
+                <Function>Status CH2</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>	
+        </CommObjects>
+    </Device>
+    <Configuration ManufacturerId="57005" DeviceId="8" Revision="1">
+        <IndividualAddress Address="1.1."/>
+        <CommObjectConfigurations>
+            <CommObjectConfiguration Id="0" active="true"/>
+            <CommObjectConfiguration Id="1" active="true"/>
+            <CommObjectConfiguration Id="2" active="true"/>
+            <CommObjectConfiguration Id="3" active="true"/>
+            <CommObjectConfiguration Id="4" active="true"/>
+            <CommObjectConfiguration Id="5" active="true"/>
+            <CommObjectConfiguration Id="6" active="true"/>
+            <CommObjectConfiguration Id="7" active="true"/>
+            <CommObjectConfiguration Id="8" active="true"/>
+            <CommObjectConfiguration Id="9" active="true"/>
+            <CommObjectConfiguration Id="10" active="true"/>
+            <CommObjectConfiguration Id="11" active="true"/>
+            <CommObjectConfiguration Id="12" active="true"/>
+            <CommObjectConfiguration Id="13" active="true"/>
+            <CommObjectConfiguration Id="14" active="true"/>
+            <CommObjectConfiguration Id="15" active="true"/>
+            <CommObjectConfiguration Id="16" active="true"/>
+            <CommObjectConfiguration Id="17" active="true"/>
+            <CommObjectConfiguration Id="18" active="true"/>
+            <CommObjectConfiguration Id="19" active="true"/>
+            <CommObjectConfiguration Id="20" active="true"/>
+            <CommObjectConfiguration Id="21" active="true"/>
+            <CommObjectConfiguration Id="22" active="true"/>
+            <CommObjectConfiguration Id="23" active="true"/>
+            <CommObjectConfiguration Id="24" active="true"/>
+            <CommObjectConfiguration Id="25" active="true"/>
+            <CommObjectConfiguration Id="26" active="true"/>
+            <CommObjectConfiguration Id="27" active="true"/>
+            <CommObjectConfiguration Id="28" active="true"/>
+            <CommObjectConfiguration Id="29" active="true"/>
+            <CommObjectConfiguration Id="30" active="true"/>
+            <CommObjectConfiguration Id="31" active="true"/>
+            <CommObjectConfiguration Id="32" active="true"/>
+            <CommObjectConfiguration Id="33" active="true"/>
+            <CommObjectConfiguration Id="34" active="true"/>
+            <CommObjectConfiguration Id="35" active="true"/>
+            <CommObjectConfiguration Id="36" active="true"/>
+            <CommObjectConfiguration Id="37" active="true"/>
+            <CommObjectConfiguration Id="38" active="true"/>
+            <CommObjectConfiguration Id="39" active="true"/>
+            <CommObjectConfiguration Id="40" active="true"/>
+            <CommObjectConfiguration Id="41" active="true"/>
+            <CommObjectConfiguration Id="42" active="true"/>
+            <CommObjectConfiguration Id="43" active="true"/>
+            <CommObjectConfiguration Id="44" active="true"/>
+            <CommObjectConfiguration Id="45" active="true"/>
+            <CommObjectConfiguration Id="46" active="true"/>
+            <CommObjectConfiguration Id="47" active="true"/>
+            <CommObjectConfiguration Id="48" active="true"/>
+        </CommObjectConfigurations>
+        <ParameterConfigurations>
+            <ParameterConfiguration Id="0" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="1" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="2" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="3" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="4" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="5" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="6" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="7" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="8" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="9" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="10" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="11" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="12" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="13" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="14" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="15" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="16" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="17" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="18" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="19" Value="FFFFFFFF"/>
+            <ParameterConfiguration Id="20" Value="FFFFFFFF"/>
+        </ParameterConfigurations>
+    </Configuration>
+</KonnektingDevice>
