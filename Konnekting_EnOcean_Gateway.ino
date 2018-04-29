@@ -3,7 +3,7 @@
 #include <KonnektingDevice.h>
 #include "kdevice_KNX_EnOcean_Gateway.h"
 #include "EEPROM.h"
-#include "Enocean.h"
+#include "EnOcean.h"
 #include <Wire.h>
 
 // ################################################
