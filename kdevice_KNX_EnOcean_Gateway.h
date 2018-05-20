@@ -144,6 +144,6 @@ byte KonnektingDevice::_paramSizeList[] = {
     /* Index 38   */ PARAM_RAW4,
     /* Index 39   */ PARAM_UINT8
 };
-const byte KonnektingDevice::_numberOfParams = sizeof (_paramSizeList); // do not change this code
+const int KonnektingDevice::_numberOfParams = sizeof (_paramSizeList); // do not change this code
 
 #endif

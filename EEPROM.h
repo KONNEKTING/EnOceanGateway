@@ -3,7 +3,7 @@
 
 #include <Wire.h>
 
-int readEeprom(int index) { 
+byte readEeprom(int index) { 
 	// when using external storage, implement READ command here
 	// return EEPROM.read(index);
 	byte rdata = 0xFF;
@@ -17,7 +17,7 @@ int readEeprom(int index) {
 	return rdata;
 }
 
-void writeEeprom(int index, int val) { 
+void writeEeprom(int index, byte val) { 
 	// when using external storage, implement WRITE command here
 	// return EEPROM.write(index, val);
 	Wire.beginTransmission(0x50);
@@ -28,7 +28,7 @@ void writeEeprom(int index, int val) {
 	delay(5); //is it needed?!
 }
 
-void updateEeprom(int index, int val) {
+void updateEeprom(int index, byte val) {
 	// when using external storage, implement UPDATE command here
 	//return EEPROM.update(index, val);
 	if (readEeprom(index) != val) {
