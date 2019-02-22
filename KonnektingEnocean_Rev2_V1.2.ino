@@ -34,6 +34,8 @@
 #include "EnOceanDevice_RPS_simple.h"
 #include "EnOceanDevice_RPS_sender.h"
 #include "EnOceanDevice_NodOn_2Ch.h"
+#include "EnOceanDevice_1BS_simple.h"
+#include "EnOceanDevice_T_H_VOC.h"
 
 // ################################################
 // ### EnOcean Devices Instance creation
@@ -73,7 +75,23 @@ EnOceanDevice_NodOn_2Ch actor8 = EnOceanDevice_NodOn_2Ch();
 EnOceanDevice_NodOn_2Ch actor9 = EnOceanDevice_NodOn_2Ch();
 EnOceanDevice_NodOn_2Ch actorA = EnOceanDevice_NodOn_2Ch();
 
+EnOceanDevice_1BS_simple sensorFenster1 = EnOceanDevice_1BS_simple();
+EnOceanDevice_1BS_simple sensorFenster2 = EnOceanDevice_1BS_simple();
+EnOceanDevice_1BS_simple sensorFenster3 = EnOceanDevice_1BS_simple();
+EnOceanDevice_1BS_simple sensorFenster4 = EnOceanDevice_1BS_simple();
+EnOceanDevice_1BS_simple sensorFenster5 = EnOceanDevice_1BS_simple();
+EnOceanDevice_1BS_simple sensorFenster6 = EnOceanDevice_1BS_simple();
+EnOceanDevice_1BS_simple sensorFenster7 = EnOceanDevice_1BS_simple();
+EnOceanDevice_1BS_simple sensorFenster8 = EnOceanDevice_1BS_simple();
+EnOceanDevice_1BS_simple sensorFenster9 = EnOceanDevice_1BS_simple();
+EnOceanDevice_1BS_simple sensorFenster10 = EnOceanDevice_1BS_simple();
 
+
+EnOceanDevice_T_H_VOC sensor_T_H_VOC_1 = EnOceanDevice_T_H_VOC();
+EnOceanDevice_T_H_VOC sensor_T_H_VOC_2 = EnOceanDevice_T_H_VOC();
+EnOceanDevice_T_H_VOC sensor_T_H_VOC_3 = EnOceanDevice_T_H_VOC();
+EnOceanDevice_T_H_VOC sensor_T_H_VOC_4 = EnOceanDevice_T_H_VOC();
+EnOceanDevice_T_H_VOC sensor_T_H_VOC_5 = EnOceanDevice_T_H_VOC();
 
 
 
@@ -101,9 +119,10 @@ void setup()
 #endif
 
 	//****************** Init Debug KONNEKTING ********************************************
-	Konnekting.setMemoryReadFunc(&readEeprom);
-	Konnekting.setMemoryWriteFunc(&writeEeprom);
-	Konnekting.setMemoryUpdateFunc(&updateEeprom);
+    Konnekting.setMemoryReadFunc(&readMemory);
+    Konnekting.setMemoryWriteFunc(&writeMemory);
+    Konnekting.setMemoryUpdateFunc(&updateMemory);
+    Konnekting.setMemoryCommitFunc(&commitMemory);
 
 	// Initialize KNX enabled Arduino Board
 	Konnekting.init(KNX_SERIAL, PROG_BUTTON_PIN, PROG_LED_PIN, MANUFACTURER_ID, DEVICE_ID, REVISION);
@@ -249,6 +268,71 @@ void setup()
 #endif
 	enOcean.configureDevice(actorA);
 
+
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 1 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster1);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 2 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster2);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 3 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster3);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 4 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster4);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 5 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster5);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 6 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster7);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 7 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster7);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 8 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster8);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 9 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster9);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor Fenster 10 *****************"));
+#endif
+  enOcean.configureDevice(sensorFenster10);
+
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor T H VOC 1 *****************"));
+#endif
+  enOcean.configureDevice(sensor_T_H_VOC_1);
+#ifdef KDEBUG
+  Debug.println(F("** READ Sensor T H VOC 2 *****************"));
+#endif
+  enOcean.configureDevice(sensor_T_H_VOC_2);
+  #ifdef KDEBUG
+  Debug.println(F("** READ Sensor T H VOC 3 *****************"));
+#endif
+  enOcean.configureDevice(sensor_T_H_VOC_3);
+  #ifdef KDEBUG
+  Debug.println(F("** READ Sensor T H VOC 4 *****************"));
+#endif
+  enOcean.configureDevice(sensor_T_H_VOC_4);
+  #ifdef KDEBUG
+  Debug.println(F("** READ Sensor T H VOC 5 *****************"));
+#endif
+  enOcean.configureDevice(sensor_T_H_VOC_5);
+
+
+
 #ifdef KDEBUG
 	Debug.println(F("ID0: 0x%08x"), taster1.tasterId);
 #endif
@@ -256,6 +340,10 @@ void setup()
 	// Init EnOcean operation if not yet done by any device during setup
 	enOcean.init();
 
+// for (int i=0; i<200 ;i++){
+//   writeEeprom(i, 255);
+//   delay (5);
+// }
   
 #ifdef KDEBUG
 	Debug.println(F("Ready for normal operation"));
@@ -277,5 +365,3 @@ void knxEvents(byte index)
 {
 	enOcean.handleKnxEvents(index);
 }
-
-

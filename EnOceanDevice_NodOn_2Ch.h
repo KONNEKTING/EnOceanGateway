@@ -98,21 +98,28 @@ class EnOceanDevice_NodOn_2Ch: public IEnOceanDevice
       if (status_request == false)
       {
         status_request = true;
-        getStatusActors(enOcean.getBaseId());
+        //getStatusActors(enOcean.getBaseId());
       }
-			if (millis() > nextPollTime)
-			getStatusActors(enOcean.getBaseId());	
+			if (millis() > nextPollTime){
+			//getStatusActors(enOcean.getBaseId());	
+			}
 		}
 
 		// something happened on the bus, let's react
 #pragma GCC diagnostic push // I don't want a warning, just because we don't do anything here
 #pragma GCC diagnostic ignored "-Wunused-parameter"
+
+
 		void handleKnxEvents(byte index)
 		{
 			// nothing to listen for from Knx
 			return;
 		}
+
+   
 #pragma GCC diagnostic pop
+
+
 
 		// decode EnOcean message. Fail fast!
 		bool handleEnOceanPacket(PACKET_SERIAL_TYPE* f_Pkt_st)
