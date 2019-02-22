@@ -1,1 +1,1 @@
-# Konnekting_Enocean_Gateway
+# KONNEKTING Enocean Gateway
