@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <KonnektingDevice xmlns="http://konnekting.de/xml/KonnektingDevice/v0">
-    <Device ManufacturerId="57005" DeviceId="7" Revision="1">
+    <Device ManufacturerId="57005" DeviceId="7" Revision="2">
         <ManufacturerName>KONNEKTING</ManufacturerName>
         <DeviceName>KNX EnOcean Gateway</DeviceName>
         <Parameters>
@@ -170,6 +170,130 @@
                     <Value Type="uint8" Default="00" Options="00=EEP: D2-01-12|01=TBD"/>
                 </Parameter>
             </ParameterGroup>
+			<ParameterGroup Name="Fensterkontakte" Id="3">
+                <Parameter Id="40">
+                    <Description>Fensterkontakt_1 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="41">
+                    <Description>Fensterkontakt_1 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="42">
+                    <Description>Fensterkontakt_2 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="43">
+                    <Description>Fensterkontakt_2 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="44">
+                    <Description>Fensterkontakt_3 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="45">
+                    <Description>Fensterkontakt_3 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="46">
+                    <Description>Fensterkontakt_4 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="47">
+                    <Description>Fensterkontakt_4 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="48">
+                    <Description>Fensterkontakt_5 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="49">
+                    <Description>Fensterkontakt_5 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+				</Parameter>	
+				<Parameter Id="50">
+					<Description>Fensterkontakt_6 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="51">
+                    <Description>Fensterkontakt_6 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+                </Parameter>
+				<Parameter Id="52">
+					<Description>Fensterkontakt_7 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="53">
+                    <Description>Fensterkontakt_7 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+                </Parameter>
+				<Parameter Id="54">
+					<Description>Fensterkontakt_8 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="55">
+                    <Description>Fensterkontakt_8 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+                </Parameter>
+				<Parameter Id="56">
+					<Description>Fensterkontakt_9 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="57">
+                    <Description>Fensterkontakt_9 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+                </Parameter>
+				<Parameter Id="58">
+					<Description>Fensterkontakt_10 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="59">
+                    <Description>Fensterkontakt_10 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D5-00-01|01=TBD"/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Temp, Hum, VOC" Id="4">
+                <Parameter Id="60">
+                    <Description>T_H_VOC_1 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="61">
+                    <Description>T_H_VOC_1 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-04-00|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="62">
+                    <Description>T_H_VOC_2 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="63">
+                    <Description>T_H_VOC_2 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-04-00|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="64">
+                    <Description>T_H_VOC_3 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="65">
+                    <Description>T_H_VOC_3 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-04-00|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="66">
+                    <Description>T_H_VOC_4 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="67">
+                    <Description>T_H_VOC_4 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-04-00|01=TBD"/>
+                </Parameter>
+				 <Parameter Id="68">
+                    <Description>T_H_VOC_5 Sender-ID</Description>
+                    <Value Type="raw4" Default="FFFFFFFF" Options=""/>
+                </Parameter>
+				<Parameter Id="69">
+                    <Description>T_H_VOC_5 Protokol</Description>
+                    <Value Type="uint8" Default="00" Options="00=EEP: D2-04-00|01=TBD"/>
+				</Parameter>
+			</ParameterGroup>
         </Parameters>
         <CommObjects>
             <CommObject Id="0">
@@ -712,6 +836,186 @@
                 <DataPointType>1.001</DataPointType>
                 <Flags>52</Flags>
             </CommObject>	
+			<CommObject Id="90">
+                <Name>Fensterkontakt_1</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="91">
+                <Name>Fensterkontakt_2</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="92">
+                <Name>Fensterkontakt_3</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="93">
+                <Name>Fensterkontakt_4</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="94">
+                <Name>Fensterkontakt_5</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="95">
+                <Name>Fensterkontakt_6</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="96">
+                <Name>Fensterkontakt_7</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="97">
+                <Name>Fensterkontakt_8</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="98">
+                <Name>Fensterkontakt_9</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="99">
+                <Name>Fensterkontakt_10</Name>
+                <Function>Status</Function>
+                <DataPointType>1.009</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="100">
+                <Name>T_H_VOC_1</Name>
+                <Function>Temperatur (°C)</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="101">
+                <Name>T_H_VOC_1</Name>
+                <Function>Luftfeuchte (%)</Function>
+                <DataPointType>9.007</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="102">
+                <Name>T_H_VOC_1</Name>
+                <Function>iAQ (%)</Function>
+                <DataPointType>9.008</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="103">
+                <Name>T_H_VOC_1</Name>
+                <Function>Batterie (V)</Function>
+                <DataPointType>9.020</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="104">
+                <Name>T_H_VOC_2</Name>
+                <Function>Temperatur (°C)</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="105">
+                <Name>T_H_VOC_2</Name>
+                <Function>Luftfeuchte (%)</Function>
+                <DataPointType>9.007</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="106">
+                <Name>T_H_VOC_2</Name>
+                <Function>iAQ (%)</Function>
+                <DataPointType>9.008</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="107">
+                <Name>T_H_VOC_2</Name>
+                <Function>Batterie (V)</Function>
+                <DataPointType>9.020</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="108">
+                <Name>T_H_VOC_3</Name>
+                <Function>Temperatur (°C)</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="109">
+                <Name>T_H_VOC_3</Name>
+                <Function>Luftfeuchte (%)</Function>
+                <DataPointType>9.007</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="110">
+                <Name>T_H_VOC_3</Name>
+                <Function>iAQ (%)</Function>
+                <DataPointType>9.008</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="111">
+                <Name>T_H_VOC_3</Name>
+                <Function>Batterie (V)</Function>
+                <DataPointType>9.020</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="112">
+                <Name>T_H_VOC_4</Name>
+                <Function>Temperatur (°C)</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="113">
+                <Name>T_H_VOC_4</Name>
+                <Function>Luftfeuchte (%)</Function>
+                <DataPointType>9.007</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="114">
+                <Name>T_H_VOC_4</Name>
+                <Function>iAQ (%)</Function>
+                <DataPointType>9.008</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="115">
+                <Name>T_H_VOC_4</Name>
+                <Function>Batterie (V)</Function>
+                <DataPointType>9.020</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="116">
+                <Name>T_H_VOC_5</Name>
+                <Function>Temperatur (°C)</Function>
+                <DataPointType>9.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="117">
+                <Name>T_H_VOC_5</Name>
+                <Function>Luftfeuchte (%)</Function>
+                <DataPointType>9.007</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="118">
+                <Name>T_H_VOC_5</Name>
+                <Function>iAQ (%)</Function>
+                <DataPointType>9.008</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="119">
+                <Name>T_H_VOC_5</Name>
+                <Function>Batterie (V)</Function>
+                <DataPointType>9.020</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
         </CommObjects>
     </Device>
     <Configuration ManufacturerId="57005" DeviceId="8" Revision="1">
